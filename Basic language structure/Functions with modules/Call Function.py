@@ -1,6 +1,15 @@
-def power(x, y):
-    return x ** y
+def fact(x):
 
-#Call the function:
-a =power(2, 3)
-print(a)
+	if x == 1:
+	    return 1
+	else: 
+	    return (x * fact(x-1))
+
+x = int(input("Enter the value"))
+
+#Here fact(x) function is called
+print("The factorial of", x, "is", fact(x))
+
+
+
+
