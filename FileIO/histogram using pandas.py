@@ -1,4 +1,3 @@
-# Program E15x12.py
 # histogram using pandas
 import pandas as pd
 import matplotlib.pyplot as plt

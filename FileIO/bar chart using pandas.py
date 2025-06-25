@@ -1,4 +1,3 @@
-# Program E15x13.py
 # bar chart using pandas
 import pandas as pd
 import matplotlib.pyplot as plt

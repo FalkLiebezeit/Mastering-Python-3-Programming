@@ -1,4 +1,3 @@
-# Program E15x6.py
 # Scatter plot
 # scatter plot of Administration Spend and Profit
 import matplotlib.pyplot as plt

@@ -17,7 +17,7 @@ data = {
 df = pd.DataFrame(data)
 
 # define file path
-file_path = 'XLScreated.xlsx'
+file_path = './DataOutput/XLS created.xlsx'
 
 # write dataframe to excel
 df.to_excel(file_path,index=False)

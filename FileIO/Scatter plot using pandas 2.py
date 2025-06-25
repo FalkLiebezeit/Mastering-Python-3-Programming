@@ -1,4 +1,3 @@
-# Program E15x14.py
 # Scatter plot using pandas
 import matplotlib.pyplot as plt
 import pandas as pd

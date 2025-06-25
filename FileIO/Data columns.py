@@ -1,5 +1,4 @@
-# Program E15x10.py
-# Getting the tail of wines data
+# Data columns
 import pandas as pd
 data= pd.read_csv('C:/Users/Subbu/Desktop/winesreview.csv')
-print(data.tail())
+print(data.columns)

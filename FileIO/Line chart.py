@@ -1,4 +1,3 @@
-# Program E15x7.py
 # Line chart
 import matplotlib.pyplot as plt
 import pandas as pd
