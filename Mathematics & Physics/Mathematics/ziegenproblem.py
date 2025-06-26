@@ -1,5 +1,11 @@
 ﻿"""Simulation des Ziegenproblems."""
 
+
+# https://www.youtube.com/watch?v=wvpkESH4fl0
+# https://www.youtube.com/watch?v=CYQZ_GrJwLA
+
+
+
 import random
 
 
