@@ -1,4 +1,6 @@
-﻿"""Calculation of a repayment plan for a loan."""
+﻿"""Calculation of a repayment plan for a loan and visualization."""
+
+import matplotlib.pyplot as plt
 
 # --- Initial loan parameters ---
 principal = 350_000        # Initial debt in euros
@@ -10,6 +12,12 @@ month = 0
 total_interest = 0
 total_payments = 0
 remaining_debt = principal
+
+# --- Lists for plotting ---
+months_list = []
+debt_list = []
+interest_list = []
+principal_paid_list = []
 
 # --- Repayment loop: continue until the loan is fully repaid ---
 while remaining_debt > 0:
@@ -29,6 +37,12 @@ while remaining_debt > 0:
     total_payments += payment
     total_interest += interest
 
+    # For plotting
+    months_list.append(month)
+    debt_list.append(max(remaining_debt, 0))
+    interest_list.append(interest)
+    principal_paid_list.append(payment - interest)
+
     # Output the details for this month
     principal_repaid = payment - interest
     print(f'{month:3d}. Month: Interest {interest:8.2f} €, '
@@ -45,3 +59,16 @@ print("\nLoan fully repaid after "
 print(f'Total paid        : {total_payments:10.2f} €')
 print(f'   of which interest   : {total_interest:10.2f} €')
 print(f'   of which principal  : {total_principal_repaid:10.2f} €')
+
+# --- Plot the repayment plan ---
+plt.figure(figsize=(10, 6))
+plt.plot(months_list, debt_list, label='Remaining Debt (€)', color='blue')
+plt.bar(months_list, interest_list, label='Monthly Interest (€)', color='red', alpha=0.3)
+plt.bar(months_list, principal_paid_list, bottom=interest_list, label='Principal Repayment (€)', color='green', alpha=0.3)
+plt.xlabel('Month')
+plt.ylabel('Amount (€)')
+plt.title('Loan Repayment Plan')
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.tight_layout()
+plt.show()
