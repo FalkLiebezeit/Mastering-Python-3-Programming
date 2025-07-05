@@ -1,1 +1,1 @@
-eading from a file
+reading from a file
