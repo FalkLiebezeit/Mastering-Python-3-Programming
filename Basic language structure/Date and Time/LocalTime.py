@@ -1,11 +1,10 @@
-import time;
+import time
 from datetime import datetime
 
+# Get the current local time as a formatted string
+local_time = time.asctime(time.localtime())
+print("Local current time:", local_time)
 
-localtime = time.asctime(time.localtime(time.time()))
-print("Local current time :",localtime)
-
-print("current date :", datetime.today().date())
-
-
-
+# Get the current local date using datetime
+current_date = datetime.today().date()
+print("Current date:", current_date)

@@ -1,5 +1,7 @@
 import calendar
-# calender for a specific month is obtained
-cal_month = calendar.month(2022,9)
-print(cal_month)
 
+# Get the calendar for a specific month and year (September 2022)
+cal_month = calendar.month(2022, 9)
+
+# Print the formatted calendar for the specified month
+print(cal_month)
