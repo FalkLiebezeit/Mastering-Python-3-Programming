@@ -1,4 +1,3 @@
-# Program E13x5.py
 # Demonstration of measuring elapsed time using perf_counter from the time module
 
 from time import perf_counter, sleep

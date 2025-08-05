@@ -1,10 +1,9 @@
-# Program E13x8.py
-# process_time for finding CPU time
+# perf_counter to find CPU time
 from time import *
-t1=process_time() # measure start time
+t1=perf_counter() # measure start time
 squares=[]
 for num in range(100000):
 	squares.append(num*num)
 sleep(5)
-t2=process_time() # measure stop time
+t2=perf_counter() # measure stop time
 print('elapsed time =', t2-t1, 'seconds')

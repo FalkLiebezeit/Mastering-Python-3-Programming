@@ -1,4 +1,3 @@
-# Program E13x6.py
 # Demonstration of measuring CPU process time using process_time from the time module
 
 from time import process_time, sleep
